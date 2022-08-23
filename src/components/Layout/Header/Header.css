@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Belleza&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  height: 60px;
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+  overflow: hidden;
+}
+
+.menu {
+  width: 100%;
+  padding: 0rem 2rem;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #fff;
+  overflow: hidden;
+}
+
+.image {
+  width: 5rem;
+  height: 3rem;
+  margin-left: -50px;
+  margin-right: -50px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+#primary li a {
+  text-decoration: none;
+
+  padding: 5px 0;
+  margin-right: 100px;
+  font-family: "belleza", cursive;
+  font-size: 30px;
+  line-height: 1;
+  font-weight: 800;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(to right, #23abd4, #23abd4 50%, #fff 50%);
+  background-size: 200% 100%;
+  background-position: -100%;
+  transition: all 0.3s ease-in-out;
+}
+#primary li a:before {
+  content: "";
+  width: 0;
+  height: 3px;
+  bottom: 5px;
+  left: 0;
+  bottom: -3px;
+  z-index: 0;
+  position: absolute;
+  background: #23abd4;
+  transition: all 0.3s ease-in-out;
+}
+#primary li a:hover {
+  background-position: 0%;
+}
+#primary li a:hover:before {
+  width: 100%;
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    display: none;
+  }
+ 
+}

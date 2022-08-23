@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Belleza&family=Lato:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap");
+
+.About {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 18vmax;
+}
+
+.aboutCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 82vmax;
+  height: 25vmax;
+  color: white;
+  border: 1px solid white;
+  padding: 2.2vmax;
+  padding-top: 5.5vmax;
+  backdrop-filter: blur(4px);
+}
+
+.aboutTitle {
+  text-align: center;
+  font-family: "lato", sans-serif;
+  font-weight: 300;
+  font-size: 5vmax;
+  letter-spacing: 0.5vmax;
+  margin-top: -60px;
+  padding-left: 10px;
+  box-shadow: #000;
+}
+
+.aboutTitle span {
+  background: -webkit-linear-gradient(white, #38495a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.aboutText {
+  font-family: "lato", sans-serif;
+  font-weight: 200;
+  font-size: 1.5vmax;
+  padding-left: 1vmax;
+  padding-right: 1vmax;
+}
+
+@media screen and (max-width: 700px){
+    .About{
+        margin-top: -15vmax;
+        margin-left: 9vmax;
+    }
+    .aboutCard{
+        width: 42vmax;
+        height: 34vmax;
+    }
+}

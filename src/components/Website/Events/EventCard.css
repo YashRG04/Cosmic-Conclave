@@ -1,0 +1,206 @@
+.infoCard {
+  display: flex;
+  flex-direction: row;
+
+  background: #efefbb; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #d4d3dd,
+    #efefbb
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #d4d3dd,
+    #efefbb
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  overflow: hidden;
+
+  margin: 2vmax 1.8vmax 0.8vmax 1.8vmax;
+  border-radius: 15px;
+
+  transition: 1s;
+  transform: perspective(100px) rotateX(1.5deg) scale(0.8);
+}
+
+.infoContainer {
+  width: 100vmax;
+  margin-top: 5vmax;
+  animation: floatY 3s ease-in-out infinite;
+}
+
+.infoContainer:hover {
+  animation: none;
+}
+
+.currentEvent {
+  background: #9796f0; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #fbc7d4,
+    #9796f0
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #fbc7d4,
+    #9796f0
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  margin: 0.8vmax 2vmax 0.8vmax 2vmax;
+}
+
+.pastEvent {
+  margin: 0px 60px 10px 60px;
+}
+
+.futureEvent {
+  background: #1c92d2; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #f2fcfe,
+    #1c92d2
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #f2fcfe,
+    #1c92d2
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.infoCard:hover {
+  box-shadow: 0px 0px 0.5vmax rgba(225, 224, 224, 0.5);
+  transform: scale(1);
+  animation: none;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0.8vmax 0.8vmax 0px;
+}
+
+
+
+
+
+
+
+.title {
+  font-size: 3vmax;
+  font-weight: bold;
+  font-family: "Belleza", sans-serif;
+  color: rgb(0, 0, 0);
+  padding: 1vmax 1vmax 0px;
+}
+
+.info {
+  padding: 2vmax 5vmax 3.5vmax 0vmax;
+  line-height: 2;
+  font-family: "Montserrat", sans-serif;
+  color: rgb(0, 0, 0);
+  font-size: 1vmax;
+  margin-bottom: -1vmax;
+}
+
+.pictureDiv {
+  padding: 3.5vmax 2vmax 2vmax 3vmax;
+  animation: floatX 3s ease-in-out infinite;
+}
+
+.pictureDiv:hover {
+  animation: none;
+}
+
+@keyframes floatY {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes floatX {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+.picture {
+  width: auto;
+  height: 3vmax;
+  border-radius: 8%;
+  box-shadow: 0px 0px 10px #000;
+  transition: all 0.5s ease-in-out;
+}
+
+.currentimage {
+  height: 22vmax;
+}
+
+.currDiv {
+  padding-top: 3vmax;
+}
+
+.picture:hover {
+  animation: none;
+  transform: scale(1.02);
+  box-shadow: 0px 0px 20px #000;
+}
+
+.EventButton{
+    background-color: #142743b6; /* Green */
+    border: none;
+    color: white;
+    padding: 1vmax 2vmax;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: 0.3s;
+    margin-bottom: 1.5vmax;
+}
+
+@media screen and (max-width:768px) {
+
+    .infoContainer{
+        width: 60vmax;
+        margin-left: -3.5vmax;
+    }
+
+    .infoCard{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .pictureDiv{
+        margin-left: 9.5vmax;
+    }
+    
+
+    .info{
+        margin-left: 3.5vmax;
+        font-size: 1.3vmax;
+    }
+    
+}

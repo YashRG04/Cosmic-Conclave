@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Belleza&family=Lato:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap");
+
+body {
+  background-color: #ffeaca;
+}
+
+@keyframes floatY {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-22px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.container {
+  position: absolute;
+  top: 15%;
+  left: 2%;
+  transform: translate(-50%, -50%);
+  font-family: "Lato", sans-serif;
+  animation: floatY 3.5s ease-in-out infinite;
+}
+
+.calendar {
+  width: 10vmax;
+  height: -10vmax;
+  animation: swing ease-in-out 1s infinite alternate;
+  transform-origin: center -20px;
+  box-shadow: 0px 0px 0.5vmax rgba(225, 224, 224, 0.5);
+}
+.calendar:before {
+  position: absolute;
+  content: "";
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 5px;
+  height: 5px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+}
+.calendar:after {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  margin-left: -2.5vmax;
+  content: "";
+  width: 5vmax;
+  height: 5vmax;
+  border: 1px solid rgb(255, 255, 255);
+  transform: rotate(45deg);
+  z-index: -1;
+}
+
+.calendar__month {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 2.2vmax;
+  background: #4e54c8; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #8f94fb,
+    #4e54c8
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #8f94fb,
+    #4e54c8
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  color: white;
+  font-size: 1.2vmax;
+  font-weight: 300;
+  z-index: 1;
+}
+
+.calendar__day {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 6vmax;
+  background: #9796f0; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #fbc7d4,
+    #9796f0
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #fbc7d4,
+    #9796f0
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  font-size: 3vmax;
+  font-weight: 300;
+}
+
+@keyframes swing {
+  0% {
+    transform: rotate(3deg);
+  }
+  100% {
+    transform: rotate(-3deg);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .container {
+    top: 22%;
+    left: 44.2%;
+  }
+  .calendar {
+    width: 10vmax;
+    height: -10vmax;
+  }
+  .calendar__month {
+    font-size: 1.2vmax;
+  }
+  .calendar__day {
+    font-size: 2.5vmax;
+  }
+}

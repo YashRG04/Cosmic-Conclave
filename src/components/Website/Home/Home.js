@@ -1,9 +1,12 @@
 import React, { Fragment } from "react";
+import { Link } from "react-router-dom";
 import Footer from "../../Layout/Footer/Footer";
 import Header from "../../Layout/Header/Header";
 import MetaData from "../../Layout/MetaData";
 import About from "../About/About";
 import Events from "../Events/Events";
+import Sponsors from "../Sponsors/Sponsors";
+import Calendar from "./Calendar";
 
 import "./Home.css";
 
@@ -24,6 +27,14 @@ const Home = () => {
             <br />
             <span className="titleName">COSMOLOGY CLUB X DEPTH</span>
           </div>
+          <div className="Calendar__">
+            <Calendar />
+          </div>
+          <div className="button">
+            <a className="RegisterButton" href="#" target="_blank">
+              Register
+            </a>
+          </div>
         </div>
         <div className="AboutContainer">
           <About id="#about" />
@@ -32,9 +43,10 @@ const Home = () => {
           <Events id="#events" />
         </div>
         <div className="SponsorsContainer">
-          <Footer id="#sponsors" />
+          <Sponsors id="#sponsors" />
         </div>
       </div>
+      <Footer />
     </Fragment>
   );
 };

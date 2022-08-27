@@ -1,36 +1,128 @@
 @import url("https://fonts.googleapis.com/css2?family=Belleza&family=Lato:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap");
 
-.sponsor {
-  border-radius: 10%;
-  border-width: 2px;
-  border-color: #fff;
+.Footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "lato, sans-serif";
+  color: aliceblue;
+}
+
+.Footerleft {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.sponsorLogo {
-  width: 20vmax;
-  border-radius: 10%;
-  margin: 10vmax;
-  margin-top: 5vmax;
-  
-}
-
-.Ftitle {
+  justify-content: center;
   text-align: center;
-  font-family: "lato", sans-serif;
-  font-weight: 300;
-  font-size: 5vmax;
-  letter-spacing: 0.5vmax;
-  margin-top: -60px;
-  padding-left: 10px;
-  box-shadow: #000;
-  margin-top: 10vmax;
 }
 
-.Ftitle span {
-  background: -webkit-linear-gradient(white, #38495a);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.FooterTitle {
+  font-family: "lato", sans-serif;
+  text-align: center;
+}
+
+.list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.content {
+  text-decoration: none;
+  color: aliceblue;
+  padding: 1vmax;
+  font-weight: 300;
+  text-align: left;
+  font-size: 1.3vmax;
+}
+
+.content:hover {
+  color: rgba(37, 159, 199, 0.945);
+}
+
+.Social {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.list1 {
+  padding: 1vmax;
+  margin: 0.5vmax;
+  transition: 3s;
+}
+
+svg:hover path {
+  fill: rgba(37, 159, 199, 0.945);
+}
+
+/* copyright */
+.CopyrightText {
+  font-size: 1.3vmax;
+  font-weight: 300;
+  text-align: center;
+  color: rgb(194, 201, 207);
+}
+
+hr{
+  border: 0;
+  height: 1px;
+  background-color: rgb(147, 155, 162);
+  width: 80vmax;
+  margin-bottom: 2vmax;
+}
+
+@media screen and (max-width: 768px) {
+  .Footer {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .Footerleft {
+
+  }
+
+  .Social {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 3vmax;
+  }
+
+  .list {
+    flex-direction: row;
+    text-align: center;
+  }
+  .content {
+    font-size: 1.65vmax;
+  }
+  .Social {
+    flex-direction: row;
+  }
+  .list1 {
+    margin: 0.5vmax;
+    transition: 3s;
+  }
+
+  .T1 {
+    font-size: 3.15vmax;
+    margin-top: 3vmax;
+  }
+
+  .T2 {
+    display: none;
+  }
+
+  hr{
+    width: 42vmax;
+    margin-left: 2.5vmax;
+  }
+
+  svg{
+    width: 3.5vmax;
+  }
+
+  .cicon{
+    width: 2.5vmax;
+  }
 }

@@ -4,21 +4,24 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 18vmax;
+  margin-top: 19.8vmax;
 }
 
 .aboutCard {
   display: flex;
   flex-direction: column;
+  text-align: center;
   align-items: center;
   justify-content: center;
   width: 82vmax;
-  height: 25vmax;
+  height: 30vmax;
   color: white;
   border: 1px solid white;
   padding: 2.2vmax;
   padding-top: 5.5vmax;
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(2px);
+  border-radius: 15px;
+  box-shadow: 0px 0px 3vmax rgba(225, 224, 224, 0.5);
 }
 
 .aboutTitle {
@@ -27,7 +30,7 @@
   font-weight: 300;
   font-size: 5vmax;
   letter-spacing: 0.5vmax;
-  margin-top: -60px;
+  margin-top: -34px;
   padding-left: 10px;
   box-shadow: #000;
 }
@@ -41,18 +44,36 @@
 .aboutText {
   font-family: "lato", sans-serif;
   font-weight: 200;
-  font-size: 1.5vmax;
+  font-size: 1.35vmax;
   padding-left: 1vmax;
   padding-right: 1vmax;
+  line-height: 2;
 }
 
-@media screen and (max-width: 700px){
-    .About{
-        margin-top: -15vmax;
-        margin-left: 9vmax;
-    }
-    .aboutCard{
-        width: 42vmax;
-        height: 34vmax;
-    }
+@media screen and (max-width: 700px) {
+  .About {
+    margin-top: 30vmax;
+    margin-left: 2.5vmax;
+  }
+  .aboutCard {
+    width: 42vmax;
+    text-align: left;
+    height: auto;
+    overflow: hidden;
+    padding-bottom: 0vmax;
+  }
+
+  .aboutTitle {
+    margin-top: 0vmax;
+  }
+
+  .aboutText {
+    font-size: 1.75vmax;
+    margin: 0.5vmax;
+    margin-left: -0.5vmax;
+    margin-right: -0.5vmax;
+    padding-bottom: 2vmax;
+    font-weight: 300;
+    line-height: 1.5;
+  }
 }

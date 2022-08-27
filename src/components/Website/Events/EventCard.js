@@ -18,12 +18,15 @@ const EventCard = (props) => {
               <div class="title">{props.title}</div>
             </div>
 
-            <div class="info">
-              {props.info}
+            <div class="info">{props.info}</div>
+            <div className="eventbuttons">
+              <a href={props.register} target="_blank" className="EventButton e1">
+                Register
+              </a>
+              <a href={props.rulebook} target="_blank" className="EventButton e2">
+                RuuleBook
+              </a>
             </div>
-            <a href={props.link} className="EventButton">
-              RuleBook
-            </a>
           </div>
         </div>
       </div>

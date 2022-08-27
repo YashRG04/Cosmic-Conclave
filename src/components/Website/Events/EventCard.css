@@ -16,21 +16,17 @@
 
   overflow: hidden;
 
-  margin: 2vmax 1.8vmax 0.8vmax 1.8vmax;
+  margin: 2vmax 1.8vmax 0.8vmax 1.5vmax;
   border-radius: 15px;
 
-  transition: 1s;
-  transform: perspective(100px) rotateX(1.5deg) scale(0.8);
+  transition: 0.45s;
+
+  transform: perspective(100px) rotateX(1.9deg) scale(0.75);
 }
 
 .infoContainer {
-  width: 100vmax;
   margin-top: 5vmax;
   animation: floatY 3s ease-in-out infinite;
-}
-
-.infoContainer:hover {
-  animation: none;
 }
 
 .currentEvent {
@@ -45,30 +41,12 @@
     #fbc7d4,
     #9796f0
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  margin: 0.8vmax 2vmax 0.8vmax 2vmax;
-}
-
-.pastEvent {
-  margin: 0px 60px 10px 60px;
-}
-
-.futureEvent {
-  background: #1c92d2; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #f2fcfe,
-    #1c92d2
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #f2fcfe,
-    #1c92d2
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  margin: -6vmax 2vmax 0.8vmax 0.5vmax;
 }
 
 .infoCard:hover {
-  box-shadow: 0px 0px 0.5vmax rgba(225, 224, 224, 0.5);
-  transform: scale(1);
+  box-shadow: 0px 0px 1.5vmax rgba(225, 224, 224, 0.5);
+  transform: scale(0.83);
   animation: none;
 }
 
@@ -86,12 +64,6 @@
   align-items: center;
   padding: 0.8vmax 0.8vmax 0px;
 }
-
-
-
-
-
-
 
 .title {
   font-size: 3vmax;
@@ -165,42 +137,72 @@
   box-shadow: 0px 0px 20px #000;
 }
 
-.EventButton{
-    background-color: #142743b6; /* Green */
-    border: none;
-    color: white;
-    padding: 1vmax 2vmax;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 12px;
-    transition: 0.3s;
-    margin-bottom: 1.5vmax;
+.EventButton {
+  background-color: #142743b6; /* Green */
+  border: none;
+  color: white;
+  padding: 1vmax 2vmax;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+  transition: 0.3s;
+  margin-bottom: 1.5vmax;
+  margin-right: 2vmax;
+  margin-left: 2vmax;
 }
 
-@media screen and (max-width:768px) {
+.e2 {
+  background-color: #331a4fa5;
+}
 
-    .infoContainer{
-        width: 60vmax;
-        margin-left: -3.5vmax;
-    }
+.EventButton:hover {
+  scale: 1.1;
+}
 
-    .infoCard{
-        display: flex;
-        flex-direction: column;
-    }
+@media screen and (max-width: 768px) {
+  .infoContainer {
+    width: 52vmax;
+    margin-left: -3.5vmax;
+  }
 
-    .pictureDiv{
-        margin-left: 9.5vmax;
-    }
-    
+  .currentEvent {
+    margin-top: 2vmax;
+    margin-left: 4.1vmax;
+    margin-right: 2vmax;
+  }
 
-    .info{
-        margin-left: 3.5vmax;
-        font-size: 1.3vmax;
-    }
-    
+  .infoCard {
+    display: flex;
+    flex-direction: column;
+    transform: none;
+    scale: 0.85;
+    transition: 0.2s;
+  }
+
+  .infoCard:hover {
+    scale: 1.1;
+  }
+
+  .pictureDiv {
+    margin-left: 2vmax;
+  }
+
+  .picture {
+    height: 26vmax;
+  }
+
+  .info {
+    margin-left: 2.5vmax;
+    margin-right: -3vmax;
+    font-size: 1.4vmax;
+    line-height: 1.6;
+  }
+  .EventButton {
+    font-size: 1.5vmax;
+    padding-left: 2vmax;
+  }
 }

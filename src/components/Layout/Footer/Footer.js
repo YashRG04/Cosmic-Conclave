@@ -1,20 +1,91 @@
 import React, { Fragment } from "react";
 import "./Footer.css";
+import { ImLocation2 } from "react-icons/im";
+import { BsFillTelephoneFill } from "react-icons/bs";
+import { SiGmail } from "react-icons/si";
+import { BsInstagram } from "react-icons/bs";
+import { FaDiscord } from "react-icons/fa";
+import { BsFacebook } from "react-icons/bs";
+import { BsWhatsapp } from "react-icons/bs";
 const Footer = () => {
   return (
     <Fragment>
-      <div id="sponsors" className="sponsor">
-        <div className="sponsorTitle">
-          <div className="Ftitle">
-            <span>XYZ COMPANY</span>
-          </div>
+      <hr></hr>
+      <div className="Footer">
+        <div className="FooterLeft">
+          <h1 className="FooterTitle T1">Contact</h1>
+          <ul className="Contact">
+            <li className="list">
+              <ImLocation2 class="cicon" color="grey" size={30} />
 
-          <img
-            className="sponsorLogo"
-            src="https://res.cloudinary.com/yashrg04/image/upload/v1661083276/COSMIC%20CONCLAVE/astraLens_khagbq.jpg"
-            alt="AstraLens"
-          />
+              <a
+                href="https://goo.gl/maps/qoBcNFrFWUFtrtKB7"
+                target="_blank"
+                className="content"
+              >
+                Delhi Technological University, Rohini, Delhi, 110042
+              </a>
+            </li>
+            <li className="list">
+              <BsFillTelephoneFill class="cicon" color="grey" size={30} />
+              <a href="tel:9871818135" target="_blank" className="content">
+                Phone: (Convenor) 9871818135
+              </a>
+            </li>
+            <li className="list">
+              <BsFillTelephoneFill class="cicon" color="grey" size={30} />
+              <a href="tel:8810377340" target="_blank" className="content">
+                Phone: (Convenor) 8810377340
+              </a>
+            </li>
+            <li className="list">
+              <SiGmail class="cicon" color="grey" size={30} />
+              <a
+                href="mailto:cosmosdtu@dtu.ac.in"
+                target="_blank"
+                className="content"
+              >
+                cosmosdtu@dtu.ac.in
+              </a>
+            </li>
+          </ul>
         </div>
+        <div className="FooterRight">
+          <h1 className="FooterTitle T2">Let's Connect</h1>
+          <ul className="Social">
+            <a
+              href="https://www.instagram.com/cosmologyclub.dtu/"
+              className="list1"
+              target="_blank"
+            >
+              <BsInstagram color="grey" size={30} />
+            </a>
+            <a
+              href="https://discord.gg/wTFbQ6Az"
+              className="list1"
+              target="_blank"
+            >
+              <FaDiscord color="grey" size={30} />
+            </a>
+            <a
+              href="https://www.facebook.com/cosmologyclub.dtu/"
+              className="list1"
+              target="_blank"
+            >
+              <BsFacebook color="grey" size={30} />
+            </a>
+            <a
+              href="https://chat.whatsapp.com/DXLnh8uiLU25kd8igDD0EN"
+              className="list1"
+              target="_blank"
+            >
+              <BsWhatsapp color="grey" size={30} />
+            </a>
+          </ul>
+        </div>
+      </div>
+      <div className="Copyright">
+        <p className="CopyrightText">© Web Development Team | Cosmology Club DTU 2022</p>
       </div>
     </Fragment>
   );

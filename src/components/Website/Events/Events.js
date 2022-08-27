@@ -16,7 +16,8 @@ const Events = () => {
                 key={event.id}
                 title={event.title}
                 img={event.img}
-                link={event.link}
+                register={event.register}
+                rulebook={event.rulebook}
                 info={event.info}
               />
             ))}

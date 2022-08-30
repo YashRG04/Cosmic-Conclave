@@ -24,7 +24,7 @@ const EventCard = (props) => {
                 Register
               </a>
               <a href={props.rulebook} target="_blank" className="EventButton e2">
-                RuuleBook
+                RuleBook
               </a>
             </div>
           </div>

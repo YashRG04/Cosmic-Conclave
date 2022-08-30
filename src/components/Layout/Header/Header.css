@@ -37,7 +37,7 @@ ul {
 
 #primary li a {
   text-decoration: none;
-
+  cursor:pointer;
   padding: 5px 0;
   margin-right: 100px;
   font-family: "belleza", cursive;
@@ -73,7 +73,9 @@ ul {
   width: 100%;
 }
 
-
+.link{
+  cursor: pointer;
+}
 
 @media screen and (max-width: 768px) {
   .navbar {

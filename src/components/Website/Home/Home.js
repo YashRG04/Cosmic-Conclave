@@ -10,6 +10,8 @@ import Calendar from "./Calendar";
 import { BsFillArrowUpCircleFill } from "react-icons/bs";
 import { Link } from "react-scroll";
 import "./Home.css";
+import Cnt from "../../Layout/countdown/Cnt";
+
 
 const Home = () => {
   return (
@@ -22,6 +24,9 @@ const Home = () => {
             <div id="stars"></div>
             <div id="stars2"></div>
             <div id="stars3"></div>
+          </div>
+          <div className="countdown">
+            <Cnt />
           </div>
           <div id="title">
             <span>COSMIC CONCLAVE 3.0</span>

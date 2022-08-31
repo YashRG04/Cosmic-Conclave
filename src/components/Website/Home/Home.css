@@ -4606,6 +4606,21 @@ body {
   font-weight: 400;
 }
 
+.countdown
+{
+  position:absolute;
+  -ms-flex-item-align: end;
+  /* top: 10px; */
+  /* left: 6px; */
+  right: 6px;
+  bottom: 350px;
+  /* background: -webkit-linear-gradient(white, #38495a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+  margin-right: 1vmax;
+}
+
+
 @keyframes animStar {
   from {
     transform: translateY(0px);
@@ -4705,7 +4720,13 @@ body {
   #stars3 {
     display: none;
   }
-  .scrollTop {
+  .clock, .scrollTop {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 900px){
+  .clock{
     display: none;
   }
 }
@@ -4721,3 +4742,5 @@ body {
     transform: translateY(0px);
   }
 }
+
+

@@ -4613,7 +4613,7 @@ body {
   /* top: 10px; */
   /* left: 6px; */
   right: 6px;
-  bottom: 350px;
+  bottom: 30vmax;
   /* background: -webkit-linear-gradient(white, #38495a);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; */
@@ -4725,9 +4725,15 @@ body {
   }
 }
 
-@media screen and (max-width: 900px){
-  .clock{
+@media screen and (max-width: 1225px){
+  .countdown{
     display: none;
+  }
+}
+
+@media screen and (max-width: 1700px){
+  .countdown{
+    bottom: 28.65vmax;
   }
 }
 

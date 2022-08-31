@@ -12,7 +12,6 @@ import { Link } from "react-scroll";
 import "./Home.css";
 import Cnt from "../../Layout/countdown/Cnt";
 
-
 const Home = () => {
   return (
     <Fragment>

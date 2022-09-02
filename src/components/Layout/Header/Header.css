@@ -27,7 +27,16 @@
 .image {
   width: 5rem;
   height: 3rem;
-  margin-left: -50px;
+  margin-top: 10px;
+  margin-left: -82px;
+  margin-right: -50px;
+}
+
+.image1 {
+  width: 2rem;
+  
+  margin-top: 10px;
+  margin-left: -100px;
   margin-right: -50px;
 }
 
@@ -39,7 +48,8 @@ ul {
   text-decoration: none;
   cursor:pointer;
   padding: 5px 0;
-  margin-right: 100px;
+  margin-right: 5vmax;
+  margin-left: 6vmax;
   font-family: "belleza", cursive;
   font-size: 30px;
   line-height: 1;

@@ -1,5 +1,6 @@
 import React, { Fragment } from "react";
 import Logo from "../../../images/logo.png";
+import Depth from "../../../images/depth.png";
 import Soundbar from "../Soundbar";
 import "./Header.css";
 // import { HashLink as Link } from "react-router-hash-link";
@@ -12,6 +13,11 @@ const Header = () => {
           <a href="https://cosmologyclub.netlify.app/" target="_blank">
             <img class="image" src={Logo} alt="" />
           </a>
+
+          <a href="https://www.facebook.com/depthdtu/" target="_blank">
+            <img class="image1" src={Depth} alt="" />
+          </a>
+
           <ul class="subnav s1" id="primary">
             <li>
               <Soundbar className="soundbar" />
@@ -19,7 +25,8 @@ const Header = () => {
           </ul>
           <ul class="subnav s1" id="primary">
             <li>
-              <Link  className="link"
+              <Link
+                className="link"
                 to="about"
                 spy={true}
                 smooth={true}
@@ -32,7 +39,8 @@ const Header = () => {
           </ul>
           <ul class="subnav s2" id="primary">
             <li>
-              <Link className="link"
+              <Link
+                className="link"
                 to="events"
                 spy={true}
                 smooth={true}
@@ -45,7 +53,8 @@ const Header = () => {
           </ul>
           <ul class="subnav s4" id="primary">
             <li>
-              <Link className="link"
+              <Link
+                className="link"
                 to="sponsors"
                 spy={true}
                 smooth={true}

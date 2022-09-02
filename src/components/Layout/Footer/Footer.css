@@ -20,6 +20,7 @@
 .FooterTitle {
   font-family: "lato", sans-serif;
   text-align: center;
+  margin-bottom: 2vmax;
 }
 
 .list {
@@ -63,15 +64,19 @@ svg:hover path {
   font-weight: 300;
   text-align: center;
   color: rgb(194, 201, 207);
+  margin-bottom: 2vmax;
+  margin-top: 1vmax;
 }
 
 hr{
   border: 0;
   height: 1px;
   background-color: rgb(147, 155, 162);
-  width: 80vmax;
+  width: 100vmax;
   margin-bottom: 2vmax;
 }
+
+
 
 @media screen and (max-width: 768px) {
   .Footer {
@@ -114,8 +119,8 @@ hr{
   }
 
   hr{
-    width: 42vmax;
-    margin-left: 2.5vmax;
+    width: 100%;
+    margin-left: 1vmax;
   }
 
   svg{

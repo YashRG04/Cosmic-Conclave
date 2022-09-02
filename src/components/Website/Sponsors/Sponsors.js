@@ -1,6 +1,8 @@
 import React from "react";
 import { Fragment } from "react";
 import "./Sponsors.css";
+import AICTE from "../../../images/aicte.png";
+import DTU from "../../../images/dtu.png";
 const Sponsors = () => {
   return (
     <Fragment>
@@ -11,26 +13,19 @@ const Sponsors = () => {
           </div>
           <div className="imagesConatiner">
             <div className="images">
-              <a href="#" className="imageLink i1" target="_blank">
-                <img
-                  className="sponsorLogo"
-                  src="https://res.cloudinary.com/yashrg04/image/upload/v1661083276/COSMIC%20CONCLAVE/astraLens_khagbq.jpg"
-                  alt="AstraLens"
-                />
+              <a
+                href="https://www.aicte-india.org/"
+                className="imageLink i1"
+                target="_blank"
+              >
+                <img className="sponsorLogo" src={AICTE} alt="AICTE" />
               </a>
-              <a href="#" className="imageLink i2" target="_blank">
-                <img
-                  className="sponsorLogo"
-                  src="https://res.cloudinary.com/yashrg04/image/upload/v1661083276/COSMIC%20CONCLAVE/astraLens_khagbq.jpg"
-                  alt="AstraLens"
-                />
-              </a>
-              <a href="#" className="imageLink i3" target="_blank">
-                <img
-                  className="sponsorLogo"
-                  src="https://res.cloudinary.com/yashrg04/image/upload/v1661083276/COSMIC%20CONCLAVE/astraLens_khagbq.jpg"
-                  alt="AstraLens"
-                />
+              <a
+                href="http://dtu.ac.in/"
+                className="imageLink i1"
+                target="_blank"
+              >
+                <img className="sponsorLogo" src={DTU} alt="DTU" />
               </a>
             </div>
           </div>

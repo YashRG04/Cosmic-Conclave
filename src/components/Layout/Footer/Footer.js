@@ -28,14 +28,14 @@ const Footer = () => {
             </li>
             <li className="list">
               <BsFillTelephoneFill class="cicon" color="grey" size={30} />
-              <a href="tel:9871818135" target="_blank" className="content">
-                Phone: (Convenor) 9871818135
+              <a href="tel:9319032773" target="_blank" className="content">
+                Phone: (Harshit) 9319032773
               </a>
             </li>
             <li className="list">
               <BsFillTelephoneFill class="cicon" color="grey" size={30} />
-              <a href="tel:8810377340" target="_blank" className="content">
-                Phone: (Convenor) 8810377340
+              <a href="tel:9953705331" target="_blank" className="content">
+                Phone: (Katyani) 9310524085
               </a>
             </li>
             <li className="list">

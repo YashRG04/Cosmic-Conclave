@@ -4613,7 +4613,7 @@ body {
   /* top: 10px; */
   /* left: 6px; */
   right: 6px;
-  bottom: 30vmax;
+  bottom: 29vmax;
   /* background: -webkit-linear-gradient(white, #38495a);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; */
@@ -4645,7 +4645,7 @@ body {
 
   position: absolute;
   top: 68%;
-  left: 42.5%;
+  left: 43.5%;
 
   text-decoration: none;
   border-radius: 5px;
@@ -4731,9 +4731,9 @@ body {
   }
 }
 
-@media screen and (max-width: 1700px){
+@media screen and (min-width: 1250px) and (max-width: 1300px){
   .countdown{
-    bottom: 28.65vmax;
+    bottom: 27.5vmax;
   }
 }
 

@@ -19,6 +19,7 @@
   border: 1px solid white;
   padding: 2.2vmax;
   padding-top: 5.5vmax;
+  padding-bottom: 5.5vmax;
   backdrop-filter: blur(2px);
   border-radius: 15px;
   box-shadow: 0px 0px 3vmax rgba(225, 224, 224, 0.5);
@@ -30,7 +31,8 @@
   font-weight: 300;
   font-size: 5vmax;
   letter-spacing: 0.5vmax;
-  margin-top: -34px;
+  margin-top: 0vmax;
+  margin-bottom: 3vmax;
   padding-left: 10px;
   box-shadow: #000;
 }
@@ -53,7 +55,7 @@
 @media screen and (max-width: 700px) {
   .About {
     margin-top: 30vmax;
-    margin-left: 2.5vmax;
+    margin-left: 1.5vmax;
   }
   .aboutCard {
     width: 42vmax;

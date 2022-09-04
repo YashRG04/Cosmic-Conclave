@@ -4,7 +4,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 19.8vmax;
+  margin-top: 17.2vmax;
 }
 
 .aboutCard {
@@ -14,12 +14,12 @@
   align-items: center;
   justify-content: center;
   width: 82vmax;
-  height: 30vmax;
+
   color: white;
   border: 1px solid white;
   padding: 2.2vmax;
-  padding-top: 5.5vmax;
-  padding-bottom: 5.5vmax;
+  padding-top: 2.5vmax;
+  padding-bottom: 2.5vmax;
   backdrop-filter: blur(2px);
   border-radius: 15px;
   box-shadow: 0px 0px 3vmax rgba(225, 224, 224, 0.5);
@@ -31,8 +31,8 @@
   font-weight: 300;
   font-size: 5vmax;
   letter-spacing: 0.5vmax;
-  margin-top: 0vmax;
-  margin-bottom: 3vmax;
+  margin-top: 1vmax;
+  margin-bottom: 1vmax;
   padding-left: 10px;
   box-shadow: #000;
 }
@@ -43,22 +43,37 @@
   -webkit-text-fill-color: transparent;
 }
 
+.aboutCont {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.timeline {
+  width: 21vmax;
+  border-radius: 10px;
+  box-shadow: 0px 0px 1vmax rgba(225, 224, 224, 0.5);
+}
+
 .aboutText {
   font-family: "lato", sans-serif;
   font-weight: 200;
   font-size: 1.35vmax;
-  padding-left: 1vmax;
+  padding-left: 2.2vmax;
   padding-right: 1vmax;
   line-height: 2;
+  text-align: left;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
   .About {
     margin-top: 30vmax;
     margin-left: 1.5vmax;
+    align-items: center;
   }
   .aboutCard {
-    width: 42vmax;
+    width: 38vmax;
     text-align: left;
     height: auto;
     overflow: hidden;
@@ -67,7 +82,24 @@
 
   .aboutTitle {
     margin-top: 0vmax;
+    font-size: 7vmax;
   }
+
+  .aboutCont {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+  }
+
+  .timeline{
+    width: 31vmax;
+    margin-top: 2vmax;
+    margin-bottom: 2vmax;
+    box-shadow: 0px 0px 5vmax rgba(225, 224, 224, 0.5);
+  }
+
+
 
   .aboutText {
     font-size: 1.75vmax;

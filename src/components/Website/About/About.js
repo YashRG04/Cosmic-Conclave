@@ -7,25 +7,26 @@ const About = () => {
         <h1 className="aboutTitle">
           <span>ABOUT</span>
         </h1>
-        <p className="aboutText">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-          mollitia, molestiae quas vel sint commodi repudiandae consequuntur
-          voluptatum laborum numquam blanditiis harum quisquam eius sed odit
-          fugiat iusto fuga praesentium optio, eaque rerum! Provident similique
-          accusantium nemo autem. Veritatis obcaecati tenetur iure eius earum ut
-          molestias architecto voluptate aliquam nihil, eveniet aliquid culpa
-          officia aut! Impedit sit sunt quaerat, odit, tenetur error, harum
-          nesciunt ipsum debitis quas aliquid. Reprehenderit, quia. Quo neque
-          error repudiandae fuga? Ipsa laudantium molestias eos sapiente
-          officiis modi at sunt excepturi expedita sint? Sed quibusdam
-          recusandae alias error harum maxime adipisci amet laborum.
-          Perspiciatis minima nesciunt dolorem! Officiis iure rerum voluptates a
-          cumque velit quibusdam sed amet tempora. Sit laborum ab, eius fugit
-          doloribus tenetur fugiat, temporibus enim commodi iusto libero magni
-          deleniti quod quam consequuntur! Commodi minima excepturi repudiandae
-          velit hic maxime doloremque. Quaerat provident commodi consectetur
-          veniam similique ad
-        </p>
+        <div className="aboutCont">
+          <div className="aboutPic">
+            <img
+              className="timeline"
+              src="https://res.cloudinary.com/yashrg04/image/upload/v1662289744/COSMIC%20CONCLAVE/CC_EVENTS_POST_1_mnfkua.png"
+            ></img>
+          </div>
+          <div className="aboutText">
+            Heyo People! "Remember to look up at the stars 🤫 and not down at
+            your feet." With this quote in mind Cosmology Club & Depth is coming
+            up with it's first Offline Event - Cosmic Conclave 3.0 💫 Multiple
+            fun activities await for your participation while we honour
+            Teacher's week You get a chance to win exciting prizes
+            Heyo People! "Remember to look up at the stars 🤫 and not down at
+            your feet." With this quote in mind Cosmology Club & Depth is coming
+            up with it's first Offline Event - Cosmic Conclave 3.0 💫 Multiple
+            fun activities await for your participation while we honour
+            Teacher's week You get a chance to win exciting prizes
+          </div>
+        </div>
       </div>
     </div>
   );

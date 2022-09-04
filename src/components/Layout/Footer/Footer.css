@@ -51,7 +51,7 @@
 .list1 {
   padding: 1vmax;
   margin: 0.5vmax;
-  transition: 3s;
+  transition: 0.5;
 }
 
 svg:hover path {
@@ -59,16 +59,39 @@ svg:hover path {
 }
 
 /* copyright */
+
+.Copyright {
+  text-decoration: none;
+}
+
 .CopyrightText {
   font-size: 1.3vmax;
   font-weight: 300;
   text-align: center;
   color: rgb(194, 201, 207);
-  margin-bottom: 2vmax;
+  margin-bottom: 1vmax;
   margin-top: 1vmax;
+  transition: 0.5s;
 }
 
-hr{
+.CopyrightText:hover {
+  transition: 0.5s;
+  color: #f7ff00; /* fallback for old browsers */
+  color: -webkit-linear-gradient(
+    to right,
+    #db36a4,
+    #f7ff00
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  color: linear-gradient(
+    to right,
+    #db36a4,
+    #f7ff00
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  transform: translateY(-0.5vmax);
+}
+
+hr {
   border: 0;
   height: 1px;
   background-color: rgb(147, 155, 162);
@@ -76,15 +99,12 @@ hr{
   margin-bottom: 2vmax;
 }
 
-
-
 @media screen and (max-width: 768px) {
   .Footer {
     flex-direction: column;
     justify-content: space-between;
   }
   .Footerleft {
-
   }
 
   .Social {
@@ -118,16 +138,21 @@ hr{
     display: none;
   }
 
-  hr{
+  hr {
     width: 100%;
     margin-left: 1vmax;
   }
 
-  svg{
+  svg {
     width: 3.5vmax;
   }
 
-  .cicon{
+  .cicon {
     width: 2.5vmax;
+  }
+
+  .CopyrightText {
+    margin-top: 1.8vmax;
+    margin-bottom: 2.2vmax;
   }
 }

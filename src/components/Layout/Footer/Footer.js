@@ -84,9 +84,15 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-      <div className="Copyright">
-        <p className="CopyrightText">© Web Development Team | Cosmology Club DTU 2022</p>
-      </div>
+      <a
+        href="https://github.com/YashRG04/Cosmic-Conclave"
+        target="_blank"
+        className="Copyright"
+      >
+        <p className="CopyrightText">
+          © Web Development Team | Cosmology Club DTU 2022
+        </p>
+      </a>
     </Fragment>
   );
 };

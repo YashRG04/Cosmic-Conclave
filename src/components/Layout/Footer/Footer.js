@@ -23,7 +23,7 @@ const Footer = () => {
                 target="_blank"
                 className="content"
               >
-                Delhi Technological University, Rohini, Delhi, 110042
+                B.R. Auditorium Delhi Technological University, Rohini, Delhi, 110042
               </a>
             </li>
             <li className="list">

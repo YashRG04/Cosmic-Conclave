@@ -36,7 +36,7 @@ const Home = () => {
             <Calendar />
           </div>
           <div className="button">
-            <a className="RegisterButton" href="#" target="_blank">
+            <a className="RegisterButton" href="https://docs.google.com/forms/d/e/1FAIpQLSeOa2Cgn82AOZckqKcqrSexV4f9c8Pwe-gvrEtjSycxTAGUlQ/viewform?usp=sf_link" target="_blank">
               Register
             </a>
           </div>

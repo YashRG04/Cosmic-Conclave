@@ -11,20 +11,17 @@ const About = () => {
           <div className="aboutPic">
             <img
               className="timeline"
-              src="https://res.cloudinary.com/yashrg04/image/upload/v1662289744/COSMIC%20CONCLAVE/CC_EVENTS_POST_1_mnfkua.png"
+              src="https://res.cloudinary.com/yashrg04/image/upload/v1662391953/COSMIC%20CONCLAVE/timelinefinal_v5bml0.jpg"
             ></img>
           </div>
           <div className="aboutText">
-            Heyo People! "Remember to look up at the stars 🤫 and not down at
-            your feet." With this quote in mind Cosmology Club & Depth is coming
-            up with it's first Offline Event - Cosmic Conclave 3.0 💫 Multiple
-            fun activities await for your participation while we honour
-            Teacher's week You get a chance to win exciting prizes
-            Heyo People! "Remember to look up at the stars 🤫 and not down at
-            your feet." With this quote in mind Cosmology Club & Depth is coming
-            up with it's first Offline Event - Cosmic Conclave 3.0 💫 Multiple
-            fun activities await for your participation while we honour
-            Teacher's week You get a chance to win exciting prizes
+            Hola the astrophilics “When I first looked back at the earth ,
+            standing on the moon , I cried 🥺” With this feeling instilled in
+            our mind , the Cosmology Club and DEPTH is coming up with its
+            exciting activities in the arena of cosmic conclave 3.0 Cosmic
+            Conclave is now bigger and better than ever with 5 gripping events
+            and competitions waiting for you to knock on their door. Stay tuned
+            with the amaze of cosmic conclave 3.0 🌟🌟
           </div>
         </div>
       </div>

@@ -117,6 +117,7 @@ hr {
   .list {
     flex-direction: row;
     text-align: center;
+    margin-left: 2.5vmax;
   }
   .content {
     font-size: 1.65vmax;

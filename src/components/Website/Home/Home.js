@@ -24,9 +24,11 @@ const Home = () => {
             <div id="stars2"></div>
             <div id="stars3"></div>
           </div>
-          <div className="countdown">
+
+          {/* <div className="countdown">
             <Cnt />
-          </div>
+          </div> */}
+          
           <div id="title">
             <span>COSMIC CONCLAVE 3.0</span>
             <br />

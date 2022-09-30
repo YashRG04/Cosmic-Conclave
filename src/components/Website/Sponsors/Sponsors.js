@@ -1,8 +1,6 @@
 import React from "react";
 import { Fragment } from "react";
 import "./Sponsors.css";
-import AICTE from "../../../images/aicte.png";
-import DTU from "../../../images/dtu.png";
 const Sponsors = () => {
   return (
     <Fragment>
@@ -18,14 +16,22 @@ const Sponsors = () => {
                 className="imageLink i1"
                 target="_blank"
               >
-                <img className="sponsorLogo" src={AICTE} alt="AICTE" />
+                <img
+                  className="sponsorLogo"
+                  src="https://res.cloudinary.com/yashrg04/image/upload/v1662471681/COSMIC%20CONCLAVE/aicte_i6yx1b.png"
+                  alt="AICTE"
+                />
               </a>
               <a
                 href="http://dtu.ac.in/"
                 className="imageLink i1"
                 target="_blank"
               >
-                <img className="sponsorLogo" src={DTU} alt="DTU" />
+                <img
+                  className="sponsorLogo"
+                  src="https://res.cloudinary.com/yashrg04/image/upload/v1662471680/COSMIC%20CONCLAVE/dtu_kr7lg1.png"
+                  alt="DTU"
+                />
               </a>
             </div>
           </div>

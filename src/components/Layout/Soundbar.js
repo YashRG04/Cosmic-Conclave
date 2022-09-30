@@ -1,14 +1,17 @@
+import { hover } from "@testing-library/user-event/dist/hover";
 import { React, useRef, useState } from "react";
 import styled, { keyframes } from "styled-components";
 import music from "../../images/music.mp3";
+
 
 const Box = styled.div`
   display: flex;
   cursor: pointer;
   position: fixed;
-  left: 18rem;
+  left: 19.25rem;
   top: 1.5vmax;
   z-index: 1;
+  transition: 1.5s;
 
   & > *:nth-child(1) {
     animation-delay: 0.2s;
@@ -43,12 +46,14 @@ const play = keyframes`
 `;
 
 const Line = styled.span`
-  border: 1px solid #fff;
+  border 1px solid #fff;
   color: #fff;
+  background: #fff;
+
   animation: ${play} 1s ease infinite;
   animation-play-state: ${(props) => (props.click ? "running" : "paused")};
-  height: 1rem;
-  width: 2px;
+  height: 1.3rem;
+  width: 1.5px;
   margin: 0 0.1rem;
 `;
 
@@ -65,6 +70,7 @@ const Soundbar = () => {
       ref.current.pause();
     }
   };
+
   return (
     <Box onClick={() => handleClick()}>
       <Line click={click} />
@@ -73,7 +79,12 @@ const Soundbar = () => {
       <Line click={click} />
       <Line click={click} />
 
-      <audio ref={ref} src={music} loop />
+      <audio
+        id="audio"
+        ref={ref}
+        src={music}
+        loop="loop"
+      ></audio>
     </Box>
   );
 };

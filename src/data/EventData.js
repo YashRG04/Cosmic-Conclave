@@ -12,7 +12,7 @@ export const Data = [
     id: 2,
     title: "Cósmica",
     img: "https://res.cloudinary.com/yashrg04/image/upload/v1662390272/COSMIC%20CONCLAVE/BLOG_nucbhk.jpg",
-    register: "https://forms.gle/jEDr8DA6bqMsMFR8A",
+    register: "https://forms.gle/1m44ucv1cxQcV6or9",
     rulebook:
       "https://drive.google.com/file/d/1_507gGy0uf335F6tD_zLGNdhA_kAKa4s/view?usp=sharing",
     info: "With the help of blogs on topics like gravitational astronomy, space debris, and spacetime concepts of astrophysics, this event will provide students an opportunity to investigate the mysteries of the cosmos and convey their learning via their writing talent. A blog article on one of the themes of their own accord, authored by the student, and must not be longer than 2000 words. Cósmica ( pronounced: cos-me-ca) is Spanish for the word for Cosmos. Subsequently, this is the theme of our contest- Cosmos, Superclusters , Radiophysics, Gravitational lensing, Space Weather, Space Debris, Auroras, Astrobiology, Dark matter.",
@@ -55,7 +55,7 @@ export const Data = [
     register:
       "https://docs.google.com/forms/d/e/1FAIpQLSd83clA1wUOYXp18uJP8CAiR7Ly-mN81LQ0uVta3oDrq2f1mw/viewform?usp=sf_link",
     rulebook:
-      "https://drive.google.com/file/d/1eIcr44hSZKbk51NX2qHQ1dLUBg_qyAGj/view?usp=sharing",
+      "https://drive.google.com/file/d/1WQ7p80J555lfgrHXgrHtSd9MG73qn-OQ/view?usp=sharing",
     info: "The Quintessential Interaction will be held on 13th September 2022 at 12:15 PM . This is a unique event wherein the participants will be shown depictions of a scientific phenomenon or a location in the universe through the means of a video. This interaction session will test the limits of your extempore skills. You will be able to recognize your true potential in quick thinking and analytics. Participants will be expected to interpret, analyse and describe the happenings in the video. Observation is the most momentous aspect of this round. So, make sure to keep your sight intact and follow the video meticulously. Finally, each the participants will interact by presenting their interpretations and observations. The most relevant and precise team wins. All participants must be seated 15 minutes before the start of the discussion.",
   },
 ];

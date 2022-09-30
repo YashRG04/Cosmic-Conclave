@@ -19,11 +19,12 @@ const Footer = () => {
               <ImLocation2 class="cicon" color="grey" size={30} />
 
               <a
-                href="https://goo.gl/maps/qoBcNFrFWUFtrtKB7"
+                href="https://goo.gl/maps/1z3Lcv7PmA5FEk3k9"
                 target="_blank"
                 className="content"
               >
-                B.R. Auditorium Delhi Technological University, Rohini, Delhi, 110042
+                SPS 3 Delhi Technological University, Rohini, Delhi,
+                110042
               </a>
             </li>
             <li className="list">
@@ -31,13 +32,11 @@ const Footer = () => {
               <a href="tel:9319032773" target="_blank" className="content">
                 Phone: (Harshit) 9319032773
               </a>
-            </li>
-            <li className="list">
-              <BsFillTelephoneFill class="cicon" color="grey" size={30} />
               <a href="tel:9953705331" target="_blank" className="content">
                 Phone: (Katyani) 9310524085
               </a>
             </li>
+
             <li className="list">
               <SiGmail class="cicon" color="grey" size={30} />
               <a
@@ -46,6 +45,16 @@ const Footer = () => {
                 className="content"
               >
                 cosmosdtu@dtu.ac.in
+              </a>
+            </li>
+            <li className="list">
+              <SiGmail class="cicon" color="grey" size={30} />
+              <a
+                href="mailto:depth2022.dtu@gmail.com"
+                target="_blank"
+                className="content"
+              >
+                depth2022.dtu@gmail.com
               </a>
             </li>
           </ul>

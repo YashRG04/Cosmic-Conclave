@@ -34,7 +34,7 @@
 
 .image1 {
   width: 2rem;
-  
+
   margin-top: 10px;
   margin-left: -100px;
   margin-right: -50px;
@@ -46,7 +46,7 @@ ul {
 
 #primary li a {
   text-decoration: none;
-  cursor:pointer;
+  cursor: pointer;
   padding: 5px 0;
   margin-right: 5vmax;
   margin-left: 6vmax;
@@ -83,13 +83,28 @@ ul {
   width: 100%;
 }
 
-.link{
+.link {
   cursor: pointer;
+}
+
+.soundbar {
+  animation: floatX 3.5s ease-in-out infinite;
+}
+
+@keyframes floatX {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 @media screen and (max-width: 768px) {
   .navbar {
     display: none;
   }
- 
 }
